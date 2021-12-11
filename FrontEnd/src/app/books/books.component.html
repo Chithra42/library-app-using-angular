@@ -1,0 +1,18 @@
+<div class='books'>
+    <h3>{{title}}</h3>
+    <table>
+        <tr >
+            <th id="tr">Image</th>
+            <th id="tr">Name</th>
+            <th id="tr">Author</th>
+            <th id="tr">Genre</th>
+          
+        </tr>
+        <tr  *ngFor='let i of books'>
+            <td  id="tr"><img [src]="i.Image" alt="image" id="image"></td>
+            <td  id="tr">{{i.Name}}</td>
+            <td  id="tr">{{i.Author}}</td>
+            <td  id="tr">{{i.Genre}}</td>
+        </tr>
+    </table>
+</div>
